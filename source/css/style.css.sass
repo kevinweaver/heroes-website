@@ -147,21 +147,19 @@ i.fa
   height: 100%
   padding: 25% 0
 
+//Mailchimp overrides
 #mc_embed_signup .button
-  clear: both
-  border: 0 none
-  border-radius: 4px
-  color: #FFFFFF
-  cursor: pointer
-  display: inline-block
-  font-size: 15px
-  font-weight: bold
-  height: 32px
-  line-height: 32px
-  margin: 0 5px 10px 0
-  padding: 0 22px
-  text-align: center
-  text-decoration: none
-  vertical-align: top
-  white-space: nowrap
-  width: auto
+  background-color: $green !important
+  border-radius: 0px !important
+  height: 50px !important
+  line-height: auto !important
+  margin: auto !important
+
+#mc_embed_signup .mc-field-group input
+  height: 50px !important
+
+#mc_embed_signup div.mce_inline_error
+  background-color: $red !important
+
+#mc_embed_signup #mce-success-response
+  color: $green !important

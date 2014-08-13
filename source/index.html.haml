@@ -123,25 +123,24 @@
 
 
       / Begin MailChimp Signup Form
-      %link{:href => "//cdn-images.mailchimp.com/embedcode/classic-081711.css", :rel => "stylesheet", :type => "text/css"}
-        #mc_embed_signup
-          %form#mc-embedded-subscribe-form.validate{:action => "//bradmtech.us8.list-manage.com/subscribe/post?u=fed693cecc77fcfff1978c263&amp;id=17ff7ded8e", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
-            .mc-field-group
-              .row.collapse
-                .large-9.medium-9.small-9.columns
-                  %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => ""}
-                .large-3.medium-3.small-3.columns
-                  %input#mc-embedded-subscribe.postfix.success.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
-            #mce-responses.clear
-              #mce-error-response.response{:style => "display:none"}
-              #mce-success-response.response{:style => "display:none"}
-            / real people should not fill this in and expect good things - do not remove this or risk form bot signups
-            %div{:style => "position: absolute; left: -5000px;"}
-              %input{:name => "b_fed693cecc77fcfff1978c263_17ff7ded8e", :tabindex => "-1", :type => "text", :value => ""}/
-            .clear
-        %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
-        :javascript
-          (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);  / End mc_embed_signup
+      #mc_embed_signup
+        %form#mc-embedded-subscribe-form.validate{:action => "//bradmtech.us8.list-manage.com/subscribe/post?u=fed693cecc77fcfff1978c263&amp;id=17ff7ded8e", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+          .mc-field-group
+            .row.collapse
+              .large-9.medium-9.small-9.columns
+                %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => ""}
+              .large-3.medium-3.small-3.columns
+                %input#mc-embedded-subscribe.postfix.success.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+          #mce-responses.clear
+            #mce-error-response.response{:style => "display:none"}
+            #mce-success-response.response{:style => "display:none"}
+          / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          %div{:style => "position: absolute; left: -5000px;"}
+            %input{:name => "b_fed693cecc77fcfff1978c263_17ff7ded8e", :tabindex => "-1", :type => "text", :value => ""}/
+          .clear
+      %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+      :javascript
+        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);  / End mc_embed_signup
   .row
     .large-6.large-offset-3.medium-10.medium-offset-1.small-12.columns
       %h4.text-center We'll keep it important.  We hate spam too.
