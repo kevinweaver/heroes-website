@@ -39,13 +39,15 @@
       %p Getting paid shouldn't be a pain. Let our automated invoicing system do the heavy lifting.
 #cloud.section
   .row
-    .large-8.medium-10.small-12.columns.cloud-bold
+    .large-8.medium-10.small-12.columns.cloud-content
       %h2.normal-text.text-center Cloud Based. Cross Platform. Mobile Friendly.
-      .text-center
+      .bold-text.text-center
         %p Browser-based: Windows, Mac, iOS, Android
         %p Nothing to Download. Nothing to Install.
         %p Start working on one device, finish on another.
-        %p Safe and securely encrypted in the cloud.
+        %p
+          %strong Safe
+          and securely encrypted in the cloud.
         %p Unlimited Users. Unlimited Devices. Unlimited Everything.
     .devices
       %img#macbook.device{src: "img/macbook-small.png"}
@@ -54,10 +56,10 @@
       %img#iphone.device{src: "img/iphone.png"}
 #sign-up.call-to-action
   .row
-    .large-8.medium-8.small-12.columns
-      %h3 Sign up for updates and release information.
-    .large-4.medium-4.small-12.columns
-      %button Keep me Updated
+    .large-9.medium-8.small-12.columns
+      %h3.text-center Sign up for updates and release information.
+    .large-3.medium-4.small-12.columns
+      %button.text-center.succuess.expand Keep me Updated
 #billing.section
   .row
     .large-12.columns
@@ -73,25 +75,23 @@
     .large-4.medium-4.small-12.columns
       %ul.pricing-table
         %li.title Influenza Recording
-        %li.price FREE
+        %li.price.large-bold-text FREE
         %li.description Seriously.
         %li.bullet-item Unlimited Users
         %li.bullet-item Unlimited Devices
         %li.bullet-item Unlimited Records
-        %li.bullet-item Add a Biller Anytime
         %li.cta-button
-          %a.button{:href => "#"} SIGN UP
+          %a.expand.success.button{:href => "#"} SIGN UP
     .large-4.medium-4.small-12.columns
       %ul.pricing-table
         %li.title BLS Recording
-        %li.price FREE
+        %li.price.large-bold-text FREE
         %li.description We're Not Joking.
         %li.bullet-item Unlimited Users
         %li.bullet-item Unlimited Devices
         %li.bullet-item Unlimited Records
-        %li.bullet-item Add a Biller Anytime
         %li.cta-button
-          %a.button{:href => "#"} SIGN UP
+          %a.expand.success.button{:href => "#"} SIGN UP
     .large-4.medium-4.small-12.columns
       %ul.pricing-table
         %li.title Flu + BLS Billing
@@ -101,22 +101,22 @@
         %li.bullet-item Unlimited Devices
         %li.bullet-item Unlimited Invoices
         %li.cta-button
-          %a.button{:href => "#"} TRY IT FREE
+          %a.expand.success.button{:href => "#"} TRY IT FREE
 #industry.call-to-action
   .row
     .large-12.columns
-      %h1.text-center We're Ready to Change Industry.  Are you?
+      %h1.text-center We're Ready to Change the Industry.  Are you?
 #newsletter.section
   .row
     .large-6.large-offset-3.medium-10.medium-offset-1.small-12.columns
-      %h2.text-center Sign Up for Release Updates
+      %h2.normal-text.text-center Sign Up for Release Updates
   .row
     .large-6.large-offset-3.medium-10.medium-offset-1.small-12.columns
       .row.collapse
         .large-9.medium-9.small-9.columns
           %input{:name => "newsletter", :placeholder => "Enter your email address", :type => "text"}
         .large-3.medium-3.small-3.columns
-          %button.postfix{:type => "submit", :value => "Sign Up"} Sign Up
+          %button.postfix.success{:type => "submit", :value => "Sign Up"} Sign Up
   .row
     .large-6.large-offset-3.medium-10.medium-offset-1.small-12.columns
       %h4.text-center We'll keep it important.  We hate spam too.

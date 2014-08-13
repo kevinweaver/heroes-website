@@ -47,6 +47,10 @@ p
 .bold-text
   font-weight: 400
 
+.large-bold-text
+  font-size: 4em !important
+  font-weight: 500 !important
+
 i.fa
   font-size: 7em
   text-align: center
@@ -71,29 +75,63 @@ i.fa
 
   #logo
     margin-top: 25%
-  
 
 #about
 
 #cloud
   background-image: url('../img/background.jpg')
+  color: $grey
   .cloud-content
-    z-index: 2
-
-.devices
-  position: absolute
-  z-index: 1
-  .device
+    z-index: 10
+  h2
+    color: $grey
+  p
+    font-weight: 400
+  .devices
+    position: absolute
+    z-index: 9
+    width: 60%
+    right: 0%
+    #macbook
+      position: absolute
+      margin-top: 138px
+      z-index: 6
+      left: 15%
+    #imac
+      margin-top: 20px
+      position: absolute
+      z-index: 5
+      left: 40%
+    #ipad
+      position: absolute
+      margin-top: 130px
+      z-index: 7
+      left: 75%
+    #iphone
+      position: absolute
+      margin-top: 183px
+      z-index: 8
+      left: 90%
 
 #sign-up
   background-color: $light-grey
   h3
     color: $grey
+    margin-top: .8em
+  button
+    margin-top: 1em
 
 #billing
+  padding: 4em 0 .5em
 
 #pricing
   background-image: url('../img/background.jpg')
+  h1
+    color: $grey
+  .pricing-table .price
+    height: 150px
+    line-height: 1.5em
+    padding-top: 30px
 
 #industry
 
