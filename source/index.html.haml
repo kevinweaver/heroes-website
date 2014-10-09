@@ -21,7 +21,7 @@
     .large-12.columns
       %h2.normal-text.text-center
         %strong Free
-        Vaccine Consent Recording.
+        Consent Recording.
         %strong Free
         Insurance Billing Software
   .row
@@ -98,14 +98,30 @@
     .large-4.medium-4.small-12.columns
       %ul.pricing-table
         %li.title Billing as a Service
-        %li.price Call for Details
+        %li.price
+          Call for
+          %br
+          Details
         %li.description Let us bill for you
         %li.bullet-item Complete Revenue Cycle Management
         %li.bullet-item Nationally Certified Medical Billers
         %li.bullet-item Maximize Potential Revenue
         %li.bullet-item Compliance Partner
         %li.cta-button
-          %a.expand.success.button{href: "#newsletter"} CONNECT ME
+          %script{:src => "http://cdn.dev.skype.com/uri/skype-uri.js", :type => "text/javascript"}
+          %a.expand.success.button{:href => "skype:krakenchild?call", :onclick => "Skype.tryAnalyzeSkypeUri('call', '0');"}
+            CONNECT ME
+          //%a.expand.success.button{href: "#newsletter"} CONNECT ME
+          /%script{:src => "http://www.skypeassets.com/i/scom/js/skype-uri.js", :type => "text/javascript"}
+          /#skype.expand.success.button
+          /  :javascript
+          /    Skype.ui({
+          /      "name": "call",
+          /      "element": "skype",
+          /      "participants": ["krakenchild"],
+          /      "imageColor": "white",
+          /      "imageSize": 14
+          /    });
 #industry.call-to-action
   .row
     .large-12.columns
